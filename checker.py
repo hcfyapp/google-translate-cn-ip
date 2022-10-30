@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from urllib.request import Request, urlopen
 from sys import stdout, argv
 from time import time
@@ -46,6 +47,10 @@ for ip in ips:
 avaliable.sort()
 top5 = avaliable[:5]
 
-print('\nTop5 Fast IPs:')
+print('\n响应速度前5的IP:')
 for ms, ip in top5:
     print(f'{ip}:\t{ms}ms')
+
+print('\nHOSTS 添加内容：')
+for ms, ip in top5:
+    print(ip, 'translate.googleapis.com')
