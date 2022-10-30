@@ -12,10 +12,24 @@ https://raw.githubusercontent.com/hcfyapp/google-translate-cn-ip/main/ips.txt
 
 ## 如何测试 IP 是否可用
 
+### 手动测试
+
 1. 从 ips.txt 中选择一个 IP，例如 `142.250.4.90`。
 2. 跟 `translate.googleapis.com` 组成一条 hosts 规则，例如 `142.250.4.90 translate.googleapis.com`，注意 IP 地址后面有一个空格。
 3. 修改电脑里的 hosts 文件，将这条规则粘贴到 hosts 文件的最后一行。修改 hosts 文件的方法请参考[这条链接里的“手动修改”方案](https://hcfy.app/blog/2022/09/28/ggg)。
 4. **重启浏览器**之后，按照第 3 步中的链接的“测试谷歌翻译是否恢复正常”来判断此 IP 是否可用。
+
+### 自动测试
+
+使用 `checker.py` 可以自动化测试出响应速度最快的 5 个 IP 地址。
+
+```bash
+# 使用代码内置的 IP 库
+check
+
+# 也可以自定义需要测速的 IP 库，将需要测试的 IP 库写进 ips.txt 即可，格式为每行一个 IP
+check ips.txt
+```
 
 ## 需要解决的问题
 
