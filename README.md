@@ -22,6 +22,17 @@ https://raw.githubusercontent.com/hcfyapp/google-translate-cn-ip/main/ips.txt
 
 大家可以去试用一下。
 
+### IP 测速
+
+使用 `checker.py` 可以自动化测试出响应速度最快的 5 个 IP 地址。
+
+```bash
+# 使用代码内置的 IP 库
+check
+# 也可以自定义需要测速的 IP 库，将需要测试的 IP 库写进 ips.txt 即可，格式为每行一个 IP
+check ips.txt
+```
+
 ## 其它资源
 
 ### 获取可用 IP 的方法
