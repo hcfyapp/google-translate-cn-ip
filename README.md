@@ -14,24 +14,14 @@ https://raw.githubusercontent.com/hcfyapp/google-translate-cn-ip/main/ips.txt
 
 见 https://hcfy.app/blog/2022/09/28/ggg 中的【修改 hosts / IP 方案】。
 
-## 其它工具
+## 自动化工具
 
-### 集扫描可用 IP + 测速 + 自动写入 hosts 于一体的工具
+目前有大佬开发了集扫描可用 IP + 测速 + 自动写入 hosts 于一体的工具：
 
-@Ponderfly 开发了一个工具，项目主页：https://github.com/Ponderfly/GoogleTranslateIpCheck
+- @Ponderfly 开发的，项目主页及下载地址：https://github.com/Ponderfly/GoogleTranslateIpCheck
+- @GoodCoder666 开发的，项目主页及下载地址：https://github.com/GoodCoder666/GoogleTranslate_IPFinder
 
 大家可以去试用一下。
-
-### IP 测速
-
-使用 `checker.py` 可以自动化测试出响应速度最快的 5 个 IP 地址。
-
-```bash
-# 使用代码内置的 IP 库
-check
-# 也可以自定义需要测速的 IP 库，将需要测试的 IP 库写进 ips.txt 即可，格式为每行一个 IP
-check ips.txt
-```
 
 ## 其它资源
 
